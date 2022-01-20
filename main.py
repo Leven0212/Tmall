@@ -7,4 +7,6 @@
 from DataLoad import *
 
 if __name__ == '__main__':
-    path = './data/'
+    path = './data/data_format1/'
+    train, test, info, log = load(path)
+    pre_process(train, test, info, log)
